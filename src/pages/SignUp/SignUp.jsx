@@ -8,7 +8,7 @@ import { Helmet } from "react-helmet-async";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import SocialLogins from "../../components/SocialLogins/SocialLogins";
-// import SectionTitle from "../../components/SectionTitle/SectionTitle";
+import SectionTitle from "../../components/SectionTitle/SectionTitle";
 
 const Signup = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -57,7 +57,7 @@ const Signup = () => {
       <Helmet>
         <title>Task Manager | Sign Up</title>
       </Helmet>
-      {/* <SectionTitle sectionHeading={'Sign Up!'}></SectionTitle> */}
+      <SectionTitle sectionHeading={'Sign Up!'}></SectionTitle>
       <div className="md:w-1/2 mx-auto">
         <div className="hero-content flex-col gap-10">
           <div className="card  w-full  shadow-2xl bg-base-100 ">
