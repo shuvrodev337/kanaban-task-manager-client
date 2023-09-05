@@ -6,8 +6,8 @@ import axios from "axios";
 import Swal from "sweetalert2";
 import { Helmet } from "react-helmet-async";
 import { AuthContext } from "../../Providers/AuthProvider";
-// import SocialLogins from "../../components/SocialLogins/SocialLogins";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import SocialLogins from "../../components/SocialLogins/SocialLogins";
 // import SectionTitle from "../../components/SectionTitle/SectionTitle";
 
 const Signup = () => {
@@ -154,12 +154,12 @@ const Signup = () => {
               Already have an account?{" "}
               <Link
                 className="btn btn-ghost btn-sm underline mb-4"
-                to={"/log-in"}
+                to={"/login"}
               >
                 Log In Here!
               </Link>
             </p>
-            {/* <SocialLogins></SocialLogins> */}
+            <SocialLogins></SocialLogins>
           </div>
         </div>
       </div>
