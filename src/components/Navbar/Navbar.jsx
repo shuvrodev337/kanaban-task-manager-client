@@ -38,12 +38,12 @@ const Navbar = () => {
           <>
             {user?.email ? (
               <>
-                <button onClick={handleLogOut}>Logout</button>
+                <button className={'font-medium text-lg'} onClick={handleLogOut}>Logout</button>
               </>
             ) : (
               <>
-                <NavLink to={"/signup"}>Sign Up</NavLink>
-                <NavLink to={"/login"}>Login</NavLink>
+                <NavLink className={'font-medium text-lg'} to={"/signup"}>Sign Up</NavLink>
+                <NavLink className={'font-medium text-lg'} to={"/login"}>Login</NavLink>
               </>
             )}
             
@@ -61,7 +61,7 @@ const Navbar = () => {
       >
         {/* <div className={`navbar h-20 mb-2 px-6  max-w-screen-2xl fixed z-10 ${theme === 'light'?'bg-white':'bg-gray-800' } shadow-lg`}> */}
 
-        <div className="navbar-start space-x-2 font-bold text-2xl"><Link to={'/'}>Kanban Task Manager</Link></div>
+        <div className="navbar-start space-x-2  text-2xl"><Link to={'/'} className="">Kanban Task Manager</Link></div>
      
         <div className="navbar-end ">
           <ul className="menu menu-horizontal space-x-6 hidden lg:flex items-center  font-semibold">

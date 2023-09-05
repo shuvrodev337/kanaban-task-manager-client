@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCDj6lahprJKjusUbbIeZTC124MvPl0OBo",
-  authDomain: "kanban-task-manager-e373c.firebaseapp.com",
-  projectId: "kanban-task-manager-e373c",
-  storageBucket: "kanban-task-manager-e373c.appspot.com",
-  messagingSenderId: "1011678139258",
-  appId: "1:1011678139258:web:ee00fdcad170fec4c5bcc3"
+  apiKey: import.meta.env.VITE_apiKey,
+  authDomain: import.meta.env.VITE_authDomain,
+  projectId: import.meta.env.VITE_projectId,
+  storageBucket: import.meta.env.VITE_storageBucket,
+  messagingSenderId: import.meta.env.VITE_messagingSenderId,
+  appId: import.meta.env.VITE_appId
 };
 
 // Initialize Firebase
